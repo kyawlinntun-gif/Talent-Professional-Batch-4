@@ -1,0 +1,57 @@
+body {
+    background: linear-gradient(90deg, gray, white);
+    color: white;
+}
+.container {
+    width: 400px;
+    height: 100%;
+    background: linear-gradient(135deg, black,red);
+    margin: 100px auto;
+    border-radius: 10px;
+}
+.container h1 {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+.container hr {
+    height: 2px;
+    background: white;
+}
+.container form {
+    padding: 15px;
+}
+.container form div {
+    margin: 10px;
+}
+.container form div:nth-child(7) div, .container form div:nth-child(8) div {
+    text-align: center;
+}
+.container form div label {
+    display: block;
+    padding-bottom: 3px;
+}
+.container form div input:not([type="radio"], [type="checkbox"]) , .container form div select {
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;
+}
+.container form div:nth-child(7) label, .container form div:nth-child(8) label {
+    display: inline-block;
+}
+.container form div textarea {
+    width: 100%;
+    height: 50px;
+}
+.container form div:nth-child(10) {
+    display: flex;
+    justify-content: space-around;
+}
+.container form div button {
+    width: 100px;
+    background: linear-gradient(135deg, red,black);
+}
+.container form div button:hover {
+    cursor: pointer;
+    background: linear-gradient(-135deg, red, black);
+}
