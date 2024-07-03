@@ -1,0 +1,108 @@
+/** Default Value **/
+button {
+    color: #fff;
+}
+/** Body **/
+body {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/** Main **/
+main {
+    margin: 25px;
+}
+
+/** Table Section **/
+main section:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+}
+main section:nth-child(1) table {
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    background-color: #707f92;
+    padding: 2px;
+}
+main section:nth-child(1) table:nth-child(1) tr:nth-child(1) {
+    background-color: #ffc0c9;
+}
+main section:nth-child(1) table:nth-child(2) tr:nth-child(odd) {
+    background-color: #b0c6de;
+}
+main section:nth-child(1) table:nth-child(3) tr:nth-child(even) {
+    background-color: #faa800;
+}
+main section:nth-child(1) table:nth-child(4) tr:nth-child(3n+1) {
+    background-color: #92ec91;
+}
+
+/** Purchase Section **/
+main section:nth-child(2) {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+main section:nth-child(2) div {
+    width: 20%;
+    text-align: center;
+    background-color: white;
+    padding: 20px 10px;
+    box-shadow: 5px 5px 5px 5px gray;
+}
+main section:nth-child(2) div h2, main section:nth-child(2) div h3 {
+    margin: 0;
+    padding: 0;
+}
+main section:nth-child(2) div ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+main section:nth-child(2) div ul li {
+    position: relative;
+    padding: 0 0 5px 20px;
+    border-bottom: 1px solid #D5D5D5;
+}
+main section:nth-child(2) div ul li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #ff9934;
+    position: absolute;
+    left: 0;
+    top: 6px;
+}
+main section:nth-child(2) div button {
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #ff9934;
+}
+
+/** Carousel Section **/
+main section:nth-child(3) {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+main section:nth-child(3) div {
+    width: 30%;
+}
+main section:nth-child(3) div img {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+main section:nth-child(3) div button {
+    width: 100%;
+    background-color: #fe0000;
+    height: 25px;
+    border: none;
+}
