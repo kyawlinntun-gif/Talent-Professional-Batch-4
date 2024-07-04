@@ -1,3 +1,4 @@
+/* Root Level */
 :root {
     --white: #fff;
     --black: #000;
@@ -54,11 +55,16 @@ main {
     width: 100%;
     text-decoration: none;
     color: var(--black);
-    border: 1px solid var(--red);
     height: 30px;
     line-height: 30px;
     margin-top: 10px;
-    box-shadow: 3px 3px 10px red;
+    border: 2px solid var(--red);
+    box-shadow: 3px 3px 10px var(--red);
+    transform: skewX(-20deg);
+}
+.card_img a span {
+    transform: skewX(20deg);
+    display: inline-block;
 }
 .card_body {
     display: flex;
@@ -93,6 +99,9 @@ main {
     color: var(--white);
     text-decoration: none;
     float: right;
+}
+.para dd:nth-of-type(n+2) {
+    display: none;
 }
 
 /* Card Sale*/
@@ -163,6 +172,70 @@ main {
     width: 40%;
     margin: 0 auto;
 }
+
+/* Card Sale Style 1 */
+.card_sale_container .card_sale:nth-of-type(1) h3, .card_sale_container .card_sale:nth-of-type(1) h4 {
+    background-color: var(--color1);
+}
+.card_sale_container .card_sale:nth-of-type(2) h3, .card_sale_container .card_sale:nth-of-type(2) h4 {
+    background-color: var(--color3);
+}
+.card_sale_container .card_sale:nth-of-type(3) h3, .card_sale_container .card_sale:nth-of-type(3) h4 {
+    background-color: var(--black);
+}
+.card_sale_container .card_sale:nth-of-type(1) h3, .card_sale_container .card_sale:nth-of-type(2) h3, .card_sale_container .card_sale:nth-of-type(3) h3 {
+    width: 80%;
+    margin: 0 auto;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    color: var(--white);
+}
+.card_sale_container .card_sale:nth-of-type(1) h4, .card_sale_container .card_sale:nth-of-type(2) h4, .card_sale_container .card_sale:nth-of-type(3) h4 {
+    width: 80%;
+    height: 60px;
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+    margin: 0 auto;
+    font-size: 20px;
+    color: var(--white);
+}
+
+/* Card Sale Style 2*/
+.card_sale_container .card_sale:nth-of-type(4) .card_sale_header {
+    background-color: var(--color1);
+}
+.card_sale_container .card_sale:nth-of-type(5) .card_sale_header {
+    background-color: var(--color3);
+}
+.card_sale_container .card_sale:nth-of-type(6) .card_sale_header {
+    background-color: var(--black);
+}
+.card_sale_container .card_sale:nth-of-type(4) .card_sale_header h2, .card_sale_container .card_sale:nth-of-type(5) .card_sale_header h2, .card_sale_container .card_sale:nth-of-type(6) .card_sale_header h2 {
+    color: var(--white);
+    height: 30px;
+    line-height: 30px;
+    font-size: 30px;
+}
+
+/* Ellipse */
+.card_sale_container .card_sale:nth-of-type(4) .ellipse, .card_sale_container .card_sale:nth-of-type(5) .ellipse, .card_sale_container .card_sale:nth-of-type(6) .ellipse {
+    border-radius: 50% / 0 0 100% 100%;
+    width: 100%;
+    height: 50px;
+}
+.card_sale_container .card_sale:nth-of-type(4) .ellipse 
+{
+    background-color: var(--color1);
+}        
+.card_sale_container .card_sale:nth-of-type(5) .ellipse 
+{
+    background-color: var(--color3);
+}
+.card_sale_container .card_sale:nth-of-type(6) .ellipse
+{
+    background-color: var(--black);
+}
+
 
 /* Footer */
 footer {
