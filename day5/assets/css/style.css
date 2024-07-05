@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --white : white;
+    --black : black;
+    --red : #f00;
+    --background: #FAF4F2;
+    --color1: #E76F51;
+    --color2: #3B3735;
+    --color3: #707070;
+    --color4: #8D8D8D;
+    --color5: #F8E1DB;
+} 
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    font-family: 'Archivo', 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: var(--white);
+    text-align: center;
+    background-color: var(--background);
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* Header */
+header {
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/bg1.png');
+    height: 100vh;
+    background-size: 100% 100%;
+    border-radius: 0 0 150px 150px;
+}
+
+/* Nav bar */
+nav {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--color1);
+    border-radius: 1rem;
+    background-color: var(--color1);
+}
+nav .nav_right {
+    display: flex;
+}
+nav .nav_right ul {
+    display: flex;
+    align-items: center;
+}
+nav .nav_left {
+    display: flex;
+}
+nav .nav_right ul li {
+    margin-left: 1rem;
+}
+nav .nav_left li {
+    margin-left: 2rem;
+}
+nav .nav_left li:nth-child(1) {
+    padding: 0.5rem;
+    margin: 0;
+}
+nav .nav_left li:nth-child(2) {
+    padding: 0.5rem;
+    border: 1px solid var(--white);
+    border-radius: 1rem;
+}
+
+/* Main */
+/* Section */
+/* Bg blog */
+.bg_blog {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bg_blog h1 {
+    font-size: 3rem;
+    line-height: 150%;
+}
+.bg_blog p {
+    margin-bottom: 1.5rem;
+}
+.bg_blog a {
+    display: inline-block;
+    width: 80%;
+    border: 1px solid var(--color1);
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    background-color: var(--color1);
+}
+
+/* Bg text blog */
+.bg {
+    margin-bottom: 10%;
+}
+.bg_text_blog {
+    width: 100%;
+    top: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.bg_text_blog .bg_text_blog1 {
+    width: 20%;
+    padding: 2rem 1rem;
+    background-color: var(--white);
+    box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14);
+}
+.bg_text_blog .bg_text_blog1 h4 {
+    margin: 1rem 0;
+    color: var(--color2);
+}
+.bg_text_blog .bg_text_blog1 p {
+    color: var(--color3);
+}
+main {
+    margin-top: -8%;
+}
+main .main_header {
+    width: 20%;
+    margin: 0 auto;
+    color: var(--black);
+    margin-bottom: 2rem;
+}
+main .main_header h3 {
+    margin-top: 1.5rem;
+    line-height: 150%;
+}
+main .main_body .card_all .card {
+    width: 20%;
+    background-color: var(--white);
+    padding: 1.5rem 1rem 2rem 1rem;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+main .main_body h3 {
+    color: var(--color2);
+}
+main .main_body p, main .main_body a {
+    color: var(--color3);
+}
+main .main_body .card_all .card .price_button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main .main_body .card_all .card .heart {
+    position: absolute;
+    width: 2rem;
+    top: 35px;
+    right: 25px;
+}
+main .main_body .card_all .card .price_button a {
+    background-color: var(--white);
+    color: var(--color1);
+    border: none;
+}
+main .main_body .card_all .card .card_img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+main .main_body .card_all .card h3 {
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+main .main_body .card_all .card p {
+    margin-bottom: 1.5rem;
+}
+main .main_body .card_all .card a {
+    border: 1px solid var(--color4);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: var(--color4);
+    color: var(--color2);
+}
+main .main_body .card_all {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* View all */
+.main_body a.view_all {
+    border: 1px solid var(--color1);
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--color1);
+    width: 6rem;
+}
+
+/* Main Footer */
+main .main_footer {
+    background-image: url('../img/Subscribe.jpg');
+    height: 60vh;
+    background-size: 100% 100%;
+    margin: 6rem 0;
+    position: relative;
+}
+main .main_footer .main_footer_text {
+    color: var(--black);
+    text-align: left;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+}
+main .main_footer .main_footer_text div {
+    display: flex;
+    align-items: center;
+}
+main .main_footer .main_footer_text > div {
+    background-color: var(--white);
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+main .main_footer .main_footer_text div img {
+    width: 2rem;
+    margin-left: auto;
+}
+main .main_footer .main_footer_text div div img {
+    width: 1.5rem;
+    margin-right: 1rem;
+}
+main .main_footer .main_footer_text h3, main .main_footer .main_footer_text p {
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color5);
+    border-radius: 10rem 10rem 0 0;
+    position: relative;
+    color: var(--color2);
+    text-align: left;
+    padding-bottom: 3rem;
+    padding-top: 6rem;
+}
+footer > img {
+    position: absolute;
+    top: -65px;
+    right: 100px;
+}
+footer .footer_text {
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer_text div {
+    margin-top: 1rem;
+    width: 15%;
+}
+footer .footer_text ul li a {
+    color: var(--color3);
+}
+footer .footer_text div:nth-of-type(1) {
+    width: 40%;
+}
+footer .footer_text div:nth-of-type(1) h3:nth-of-type(1), footer .footer_text div:nth-of-type(2) h3, footer .footer_text div:nth-of-type(3) h3, footer .footer_text div:nth-of-type(4) h3 {
+    margin-bottom: 1rem;
+}
+footer .footer_text div:nth-of-type(1) h3:nth-of-type(2) {
+    margin-top: 2rem;
+}
+footer .footer_text div:nth-of-type(1) div {
+    display: flex;
+}
+footer .footer_text div:nth-of-type(1) div img:nth-of-type(1) {
+    margin-right: 1rem;
+}
+footer p {
+    margin-top: 4rem;
+    text-align: center;
+}
+footer .footer_text div:nth-of-type(1) p {
+    color: var(--color3);
+    text-align: left;
+}
