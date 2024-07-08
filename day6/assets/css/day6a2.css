@@ -1,0 +1,34 @@
+body div {
+    width: 500px;
+    margin: 0 auto;
+}
+table, th, td {
+    border: 1px solid #000;   
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+thead {
+    background-color: #00ff00;
+}
+tbody tr:nth-child(2n + 1) {
+    background-color: lightgray;
+}
+th, td {
+    cursor: pointer;
+    height: 40px;
+    padding: 0 10px;
+}
+tr:hover {
+    background-color: lightgray;
+}
+th:first-child, td:first-child {
+    width: 50%;
+}
+th:nth-child(2), td:nth-child(2) {
+    width: 20%;
+} 
+th:last-child, td:last-child {
+    width: 30%;
+}
