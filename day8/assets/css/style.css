@@ -169,9 +169,10 @@ main section:nth-of-type(2) {
     width: 88px;
     height: 88px;
     background-color: var(--blue);
-    display: inline-block;
+    display: inline-flex;
     border-radius: 50%;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     padding: 26px 0;
 }
 .card_box h6 {
