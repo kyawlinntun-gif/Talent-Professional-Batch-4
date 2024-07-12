@@ -529,6 +529,27 @@ a {
 
 @media (min-width: 480px) {
 
+    /* Common */
+
+    h1 {
+        font-size: 45px;
+        line-height: 61px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 41px;
+    }
+    h3 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    body {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    
+    /* End Common */
+
     /* Main */
 
     /* Main Banner */
