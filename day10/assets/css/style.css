@@ -20,7 +20,7 @@
 }
 h1, h2, h3 {
     font-family: "Archivo";
-    font-size: bold;
+    font-weight: bold;
 }
 h1 {
     font-size: 81px;
