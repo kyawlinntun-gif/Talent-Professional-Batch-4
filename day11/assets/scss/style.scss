@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+@import "variables.scss";
+
+// Common
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container_inner {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    font-size: 1.5rem;
+}
+body {
+    min-height: 100vh;
+    background-color: $primary-color;
+    color: $white;
+    font-family: $siligurl-font;
+}
+a {
+    text-decoration: none;
+    color: $white;  
+}
+.text_secondary {
+    color: $secondary-color;
+}
+.cm_btn {
+    padding: 15px 10px;
+    display: inline-block;
+}
+// End Common
+
+// Header
+.header {
+
+    // Head
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+        &__logo {
+            position: relative;
+        }
+        &__logo::before {
+            content: "";
+            width: 20px;
+            height: 5px;
+            background-color: $white;
+            position: absolute;
+            top: -10px;
+            left: 0;
+        }
+        &__nav {
+            ul {
+                list-style-type: none;
+                display: flex;
+                gap: 20px;
+                li {
+                    a {
+                        text-decoration: none;
+                        color: $white;
+                    }
+                    a.active {
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    // End Head
+
+    // Body
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+        &__content {
+            display: grid;
+            gap: 40px;
+            &__button {
+                &__one {
+                    background-color: $secondary-color;
+                    color: $black;
+                }
+                &__two {
+                    border: 1px solid $secondary-color;
+                    color: $secondary-color;
+                }
+            }
+            &__icon {
+                a {
+                    background-color: $white;
+                    border-radius: 5px;
+                    width: 40px;
+                    height: 40px;
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 40px;
+                    i {
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+
+    // End Body
+}
+// End Header

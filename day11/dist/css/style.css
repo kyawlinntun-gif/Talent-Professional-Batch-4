@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container_inner {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 3rem;
+  font-size: 1.5rem;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #37231f;
+  color: #fff;
+  font-family: "Hind Siligurl", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.text_secondary {
+  color: #fe974c;
+}
+
+.cm_btn {
+  padding: 15px 10px;
+  display: inline-block;
+}
+
+.header__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+.header__head__logo {
+  position: relative;
+}
+.header__head__logo::before {
+  content: "";
+  width: 20px;
+  height: 5px;
+  background-color: #fff;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+.header__head__nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+.header__head__nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.header__head__nav ul li a.active {
+  color: #fe974c;
+}
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+.header__body__content {
+  display: grid;
+  gap: 40px;
+}
+.header__body__content__button__one {
+  background-color: #fe974c;
+  color: #000;
+}
+.header__body__content__button__two {
+  border: 1px solid #fe974c;
+  color: #fe974c;
+}
+.header__body__content__icon a {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+}
+.header__body__content__icon a i {
+  color: #000;
+}/*# sourceMappingURL=style.css.map */
