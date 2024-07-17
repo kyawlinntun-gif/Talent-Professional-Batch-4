@@ -1,0 +1,358 @@
+@use './../../foundation/setting';
+
+// Banner
+.p-banner {
+    height: 100vh;
+    @include setting.background-image('header_banner.png');
+    display: flex;
+    align-items: center;
+    &__content {
+        width: 50%;
+        p {
+            color: setting.$white;
+            line-height: setting.$line-height-90;
+        }
+        h1 {
+            color: setting.$white;
+            line-height: setting.$line-height-90;
+            padding: 20px 0 50px 0;
+        }
+    }
+}
+// End Banner
+
+// Main
+.p-main {
+    // Account
+    &__account {
+        margin: 100px 0;
+    }
+    // Price Card
+    &__priceCard {
+        color: setting.$white;
+        @include setting.flex-box(space-between, center);
+        gap: 20px;
+        background-color: setting.$white;
+        margin-bottom: 100px;
+        h4 {
+            line-height: setting.$line-height-25;
+        }
+        p {
+            font-size: setting.$font-size-20;
+            line-height: setting.$line-height-25;
+            padding: 15px 0 25px 0;
+        }
+        a {
+            font-size: setting.$font-size-15;
+            line-height: setting.$line-height-31;
+            // background-color: setting.$orange;
+            color: setting.$white;
+        }
+    }
+
+    // Card width
+    .c-card--m {
+        @include setting.calculate-width(3, 20px);
+    }
+    // End Card width
+
+    // Classic
+    &__classic {
+        @include setting.position-center-box;
+    }
+    // End Classic
+    
+    // Standard
+    &__standard {
+        @include setting.position-center-box;
+    }
+    // End Standard
+
+    // Premium
+    &__premium {
+        @include setting.position-center-box;
+        .c-btn {
+            background-color: setting.$blue;
+        }
+    }
+    // End Premium
+    // End Price Card
+
+    // About Us
+    &__about {
+        @include setting.flex-box(space-between, center);
+    }
+    &__aboutContent {
+        h2 {
+            line-height: setting.$line-height-25;
+            position: relative;
+        }
+        h2::before {
+            content: "ABOUT US";
+            font-size: setting.$font-size-15;
+            line-height: setting.$line-height-25;
+            color: setting.$red;
+            position: absolute;
+            top: -35px;
+            left: 0;
+        }
+        h2::after {
+            content: "";
+            width: 150px;
+            height: 2px;
+            background-color: setting.$blue;
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+        }
+        p.text-red {
+            margin: 80px 0 60px 0;
+        }
+        p {
+            margin-bottom: 60px;
+        }
+        a {
+            font-size: setting.$font-size-25;
+            line-height: setting.$line-height-66;
+        }
+    }
+    &__aboutImg {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        & > div {
+            @include setting.calculate-width(2, 20px);
+        }
+        & img {
+            min-height: 438px;
+            width: 100%;
+        }
+        & > img {
+            min-height: 556px;
+        }
+    }
+    &__imgRight {
+        img:first-child {
+            margin-bottom: 20px;
+        }
+    }
+    // End About Us
+
+    // End Account
+    
+    // Classes
+
+    // Header
+    &__classesHeader {
+        padding: 110px 0;
+        width: 70%;
+        @include setting.position-center;
+        h2 {
+            margin-bottom: 70px;
+            position: relative;
+            @include setting.title-underline(150px, 1px, -150%, 44%, 0, 0);
+        }
+        p {
+            font-size: setting.$font-size-30;
+            line-height: setting.$line-height-51;
+        } 
+    }
+    // End Header
+
+    // Body
+    &__classesBody {
+        @include setting.flex-box(space-between, center);
+    }
+    &__classesBody > .c-card {
+        @include setting.calculate-width(3, 0px);
+        padding: 0;
+    }
+    .card-fitness {
+        @include setting.background-image('fitness.png');
+    }
+    .card-gymnastic {
+        @include setting.background-image('advanced_gymnastic.png');
+        position: relative;
+        
+    }
+    .card-cycleTraining {
+        @include setting.background-image('cycle_training.png');
+    }
+    .card-bodyAttack {
+        @include setting.background-image('body_attack.png');
+    }
+    .card-yogaPilates {
+        @include setting.background-image('yoga_pilates.png');
+    }
+    .card-weightLifting {
+        @include setting.background-image('weight_lifting.png');
+    }
+    .card-fitness, .card-gymnastic, .card-cycleTraining, .card-bodyAttack, .card-yogaPilates, .card-weightLifting {
+        & > h3 {
+            line-height: setting.$line-height-25;
+            width: 100%;
+            padding: 55px 0;
+            background-color: setting.$black-op-58;
+            position: absolute;
+            bottom: 0; 
+        }
+        &:hover {
+            cursor: pointer;
+            & > div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    &__fitness, &__gymnastic, &__cycleTraining, &__bodyAttack, &__yogaPilates, &__weightLifting {
+        display: none;
+    }
+    
+    &__fitness, &__gymnastic, &__cycleTraining, &__bodyAttack, &__yogaPilates, &__weightLifting {
+        background-color: setting.$blue-op-80;
+        width: 90%;
+        height: 90%;
+        padding: 50px 30px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        h3 {
+            line-height: 25px;
+            position: relative;
+            @include setting.title-underline(150px, 1px, -127%, 50%, -50%, 0);
+        }
+        p {
+            margin: 60px 0 20px 0;
+            font-size: setting.$font-size-20;
+            line-height: setting.$line-height-30;
+        }
+        a {
+            font-size: setting.$font-size-15;
+            line-height: setting.$line-height-41;
+            border-radius: 24px;
+        }
+    }
+    // End Body
+
+    // End Classes
+
+    // Team
+    &__team {
+        padding: 180px 0;
+
+        h2 {
+            line-height: setting.$line-height-25;
+            position: relative;
+            margin-bottom: 60px;
+            @include setting.title-underline(150px, 1px, -100%, 50%, -50%, 0);
+        }
+        a {
+            font-size: 25px;
+            line-height: 86px;
+            @include setting.position-center
+        }
+    }
+    // Title
+    &__teamTitle {
+        width: 50%;
+        @include setting.position-center;
+    }
+    // End Title
+    // Team Card
+    &__teamCard {
+        @include setting.flex-box(space-between, center);
+        text-align: center;
+        margin: 60px 0;
+        .c-carousel {
+            @include setting.calculate-width(3, 20px);
+            h3 {
+                line-height: setting.$line-height-25;
+            }
+            p {
+                font-size: setting.$font-size-30;
+                line-height: setting.$line-height-25;
+            }
+        }
+    }
+    // End Team Card
+    // End Team
+
+    // Testmonials
+    &__testmonials {
+        padding: 130px 0 80px 0;
+        text-align: center;
+        position: relative;
+        h2 {
+            position: relative;
+            @include setting.title-underline(150px, 1px, -100%, 50%, -50%, 0);
+            line-height: setting.$line-height-25;
+        }
+        &--la {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+        }
+        &--ra {
+            position: absolute;
+            top: 50%;
+            right: 10%;
+        }
+    }
+    &__testmonialsContent {
+        @include setting.position-center;
+        > p {
+            margin: 120px 0 50px 0;
+            line-height: setting.$line-height-50;
+        }
+    }
+    &__profile {
+        h4 {
+            margin: 20px 0 10px 0;
+            line-height: setting.$line-height-45;
+        }
+        p {
+            line-height: setting.$line-height-45;
+        }
+    }
+    // End Testmonials
+
+    // News
+    &__news {
+        padding: 130px 0 250px 0;
+        h2 {
+            position: relative;
+            @include setting.title-underline(150px, 1px, -150%, 50%, -50%, 0);
+        }
+    }
+    &__newsContent {
+        @include setting.flex-box(space-between, center);
+    }
+    &__newsCard {
+        @include setting.calculate-width(3, 20px);
+    }
+    // End News
+
+    // Contact
+    &__contact {
+        @include setting.flex-box(space-between, center);
+        // align-items: center;
+        & > * {
+            @include setting.calculate-width(2, 0px);
+        }
+    }
+    &__form {
+        h2 {
+            position: relative;
+            @include setting.title-underline(150px, 1px, -100%, 0, 0, 0);
+        }
+        a {
+            @include setting.position-center;
+        }
+    }
+    // End Contact
+}
+// End Main

@@ -1,0 +1,17 @@
+@use './../../foundation/setting';
+
+.c-card {
+    @include setting.background-image('card_classic.png');
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    
+    &--m {
+        max-width: 476px;
+        min-height: 283px;
+    }
+    &--l {
+        max-width: 646px;
+        min-height: 499px;
+    }
+}

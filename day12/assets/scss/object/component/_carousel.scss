@@ -1,0 +1,10 @@
+@use './../../foundation/setting';
+
+.c-carousel {
+    box-shadow: 0 5px 26px 0 setting.$dark-blue-14;
+    &--sm {
+        width: 460px;
+        // max-height: 650px;
+    }
+}
+

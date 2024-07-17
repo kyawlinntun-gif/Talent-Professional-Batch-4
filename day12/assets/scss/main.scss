@@ -1,0 +1,21 @@
+// Setting
+@use './foundation/reset';
+@use './foundation/setting';
+@use './foundation/base';
+// End Setting
+
+// Layout
+@use './layout/header';
+@use './layout/layout';
+@use './layout/footer';
+// End Layout
+
+// Component
+@use './object/component/btn';
+@use './object/component/card';
+@use './object/component/carousel';
+// End Component
+
+// Layout
+@use './object/project/page-index.scss';
+// End Layout

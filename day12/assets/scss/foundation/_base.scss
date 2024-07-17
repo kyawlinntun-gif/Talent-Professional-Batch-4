@@ -1,0 +1,299 @@
+@use './setting';
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: setting.$font-futura-medium, setting.$font-futura-demi, setting.$font-futura-book, sans-serif;
+    font-size: setting.$font-size-14;
+    line-height: setting.$line-height-24;
+    color: setting.$black;
+    background-color: setting.$white;
+}
+h1 {
+    font-size: 75px;
+}
+h2 {
+    font-size: 60px;
+}
+h3 {
+    font-size: 45px;
+}
+h4 {
+    font-size: 30px;
+}
+h5 {
+    font-size: 24px;
+}
+h6 {
+    font-size: 20px;
+}
+// Text Style
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+// End Text Style
+
+// Text Color
+.text-red {
+    color: setting.$red !important;
+}
+.text-white {
+    color: setting.$white !important;
+}
+.text-blue {
+    color: setting.$full-blue !important;
+}
+.text-light-blue {
+    color: setting.$blue-op-80 !important;
+}
+.text-red {
+    color: setting.$red !important;
+}
+.text-gray {
+    color: setting.$gray !important;
+}
+.text-dark {
+    color: setting.$black;
+}
+// End Text Color
+
+// Background color
+.bg-blue {
+    background-color: setting.$blue !important;
+}
+.bg-dark {
+    background-color: setting.$light-black !important;
+}
+.bg-light-dark {
+    background-color: setting.$light-black;
+}
+.bg-gray {
+    background-color: setting.$gray !important;
+}
+.bg-white {
+    background-color: setting.$white !important;
+}
+.bg-violent {
+    background-color: setting.$violent !important;
+}
+.bg-orange {
+    background-color: setting.$orange !important;
+}
+// End Background color
+
+// Margin
+.mx-2 {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.mx-10 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.my-5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.my-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mt-25 {
+    margin-top: 25px !important;
+}
+.mt-35 {
+    margin-top: 35px;
+}
+.mt-60 {
+    margin-top: 60px;
+}
+.mt-100 {
+    margin-top: 100px;
+}
+.mt-120 {
+    margin-top: 120px;
+}
+.mr-5 {
+    margin-right: 5px;
+} 
+.mr-20 {
+    margin-right: 20px;
+}
+.mb-25 {
+    margin-bottom: 25px;
+}
+.mb-35 {
+    margin-bottom: 35px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+.mb-70 {
+    margin-bottom: 70px;
+}
+.mb-90 {
+    margin-bottom: 90px;
+}
+.mb-180 {
+    margin-bottom: 180px;
+}
+.ml-3 {
+    margin-left: 3px;
+}
+.ml-10p {
+    margin-left: 10%;
+}
+// End Margin
+
+// Padding
+.p-5 {
+    padding: 5px;
+}
+.p-10 {
+    padding: 10px;
+}
+.p-20 {
+    padding: 20px;
+    
+}
+.pt-120 {
+    padding-top: 120px;
+}
+.pb-180 {
+    padding-bottom: 180px;
+}
+.px-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.px-60 {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.py-5 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.py-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.py-15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.py-25 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+// End Padding
+
+// Width
+.w-2 {
+    width: 20%;
+}
+.w-3 {
+    width: 30%;
+}
+.w-4 {
+    width: 40%;
+}
+.w-5 {
+    width: 50%;
+}
+.w-7 {
+    width: 70%;
+}
+.w-75 {
+    width: 75%;
+}
+.w-8 {
+    width: 80%;
+}
+.w-10 {
+    width: 100%;
+}
+.ew-30 {
+    width: 30px;
+}
+// End Width
+
+// Height
+.h-10 {
+    height: 100%;
+}
+
+.eh-60 {
+    height: 60px;
+}
+.eh-180 {
+    height: 180px;
+}
+// End Height
+
+// Line Height
+.lheight-29 {
+    height: setting.$line-height-29;
+}
+.lheight-30 {
+    height: setting.$line-height-30;
+}
+.lheight-45 {
+    height: setting.$line-height-45;
+}
+// End Line Height
+
+// Block
+.d-inline-block {
+    display: inline-block;
+}
+.d-block {
+    display: block;
+}
+.d-flex {
+    display: flex;
+}
+.align-item-center {
+    align-items: center;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-space-between {
+    justify-content: space-between;
+}
+// End block
+
+// Border Color
+.border-color-light-blue {
+    border: 1px solid setting.$blue;
+}
+// End Border Color
+
+// Border
+.border-radius-2 {
+    border-radius: 2px !important;
+}
+.border-1-w {
+    border: 1px solid setting.$white;
+}
+// End Border
+
+// Font size
+.text-size-20 {
+    font-size: 20px;
+}
+// End Font size
+
+// Reset css
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}

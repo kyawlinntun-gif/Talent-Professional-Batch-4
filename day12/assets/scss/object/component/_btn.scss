@@ -1,0 +1,44 @@
+@use './../../foundation/setting';
+
+.c-btn {
+    display: inline-block;
+    background-color: setting.$blue;
+    padding: 4px 8px;
+    border-radius: 10px;
+    color: setting.$black;
+    font-size: setting.$font-size-30;
+    line-height: setting.$line-height-84;
+    text-align: center;
+    &--xxxl {
+        width: 566px;
+        min-height: 63px;
+    }
+    &--xxl {
+        width: 383px;
+        max-height: 92px;
+    }
+    &--xl {
+        width: 301px;
+        max-height: 92px;
+    }
+    &--l {
+        width: 301px;
+        max-height: 74px;
+    }
+    &--m {
+        width: 243px;
+        max-height: 74px;
+    }
+    &--s {
+        width: 203px;
+        max-height: 49px;
+    }
+    &--xs {
+        width: 137px;
+        max-height: 39px;
+    }
+    &--xxs {
+        width: 104px;
+        max-height: 43px;
+    }
+}
